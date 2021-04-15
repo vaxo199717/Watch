@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/originals/63/5b/6e/635b6e3b30bfeae7b713cb8162aa2c9a.jpg);
+  background-size: cover;
+}
+
+.container .watchface {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .watchface .watchface-img {
+  background: #eeeeee;
+  background: radial-gradient(circle, #eeeeee 0%, #bbbbbb 56%, #121212 72%);
+  width: auto;
+  height: 100vh;
+  border-radius: 50%;
+  -webkit-box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.342), inset 20px 15px 15px rgba(255, 255, 255, 0.05), 20px 15px 15px rgba(0, 0, 0, 0.3), inset 20px 15px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.342), inset 20px 15px 15px rgba(255, 255, 255, 0.05), 20px 15px 15px rgba(0, 0, 0, 0.3), inset 20px 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container .watchface .dayContainer {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 55.3%;
+  background: #e7e7e7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e7e7e7), color-stop(33%, #a2a2a2), color-stop(66%, #919191), to(#cfcfcf));
+  background: linear-gradient(180deg, #e7e7e7 0%, #a2a2a2 33%, #919191 66%, #cfcfcf 100%);
+  width: 10vw;
+  height: 7vh;
+  border-style: solid;
+  border-color: #ad0000;
+}
+
+.container .watchface .dayContainer .verticalLine {
+  border-left: 1px solid black;
+  height: 7vh;
+}
+
+.container .watchface .dayContainer h2 {
+  font-family: 'Bebas Neue', cursive;
+  width: 50%;
+  font-size: 2.5vw;
+  text-align: center;
+  margin-left: 1vw;
+}
+
+.container .watchface .arrow-center {
+  z-index: 10;
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0 -4px 2px rgba(255, 255, 255, 0.05), inset 0 -4px 2px rgba(255, 255, 255, 0.05), 0 -4px 2px rgba(0, 0, 0, 0.3), inset 0 -4px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 -4px 2px rgba(255, 255, 255, 0.05), inset 0 -4px 2px rgba(255, 255, 255, 0.05), 0 -4px 2px rgba(0, 0, 0, 0.3), inset 0 -4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.container .watchface .sec-arrow {
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(43%, #ff002b00), color-stop(0, #ff0000));
+  background: linear-gradient(0deg, #ff002b00 43%, #ff0000 0);
+  left: 49.95%;
+  z-index: 5;
+  top: 10vh;
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+  height: 80vh;
+  width: 0.3vw;
+}
+
+.container .watchface .min-arrow {
+  -webkit-box-shadow: 0 -4px 2px rgba(255, 255, 255, 0.05), inset 0 -4px 2px rgba(255, 255, 255, 0.05), 0 -4px 2px rgba(0, 0, 0, 0.3), inset 0 -4px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 -4px 2px rgba(255, 255, 255, 0.05), inset 0 -4px 2px rgba(255, 255, 255, 0.05), 0 -4px 2px rgba(0, 0, 0, 0.3), inset 0 -4px 2px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ffffff00), color-stop(0, #f1f1f1));
+  background: linear-gradient(0deg, #ffffff00 50%, #f1f1f1 0);
+  left: 49.8%;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  z-index: 3;
+  top: 15vh;
+  height: 70vh;
+  width: 0.6vw;
+  box-shadow: 0 -4px 2px rgba(255, 255, 255, 0.05), inset 0 -4px 2px rgba(255, 255, 255, 0.05), 0 -4px 2px rgba(0, 0, 0, 0.3), inset 0 -4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.container .watchface .hour-arrow {
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ffffff00), color-stop(0, #f1f1f1));
+  background: linear-gradient(0deg, #ffffff00 50%, #f1f1f1 0);
+  left: 49.5%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  z-index: 2;
+  top: 25vh;
+  height: 50vh;
+  width: 1vw;
+}
+/*# sourceMappingURL=style.css.map */
